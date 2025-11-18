@@ -1,0 +1,241 @@
+.market-signals {
+  padding: var(--spacing-xl);
+}
+
+.signals-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  gap: var(--spacing-lg);
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.timing-score {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.timing-label {
+  font-size: var(--font-size-sm);
+  color: var(--gray-400);
+  font-weight: var(--font-weight-medium);
+}
+
+.ai-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-xs);
+}
+
+.score-value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-300);
+}
+
+.market-insight-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.insight-icon {
+  font-size: var(--font-size-2xl);
+  flex-shrink: 0;
+}
+
+.market-insight-text {
+  font-size: var(--font-size-sm);
+  color: var(--gray-200);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.signal-card {
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.signal-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.signal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.signal-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.signal-trend {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.signal-trend.up {
+  color: var(--success-green);
+}
+
+.signal-trend.down {
+  color: var(--danger-red);
+}
+
+.signal-price {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-50);
+  margin-bottom: var(--spacing-xs);
+}
+
+.price-unit {
+  font-size: var(--font-size-sm);
+  color: var(--gray-500);
+  font-weight: var(--font-weight-normal);
+}
+
+.signal-change {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.signal-change.positive {
+  color: var(--success-green);
+}
+
+.signal-change.negative {
+  color: var(--danger-red);
+}
+
+.signal-seasonal {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.seasonal-label {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+}
+
+.signal-chart {
+  height: 35px;
+  margin-top: var(--spacing-sm);
+}
+
+.weather-condition {
+  margin-bottom: var(--spacing-sm);
+}
+
+.weather-bar {
+  height: 6px;
+  background: var(--gray-800);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-top: var(--spacing-sm);
+}
+
+.weather-fill {
+  height: 100%;
+  transition: width var(--transition-slow);
+  border-radius: var(--radius-sm);
+}
+
+.usda-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.usda-countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--success-green);
+}
+
+.countdown-number {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--success-green);
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: var(--font-size-xs);
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.usda-details {
+  flex: 1;
+}
+
+.usda-type {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-200);
+  margin-bottom: var(--spacing-xs);
+}
+
+.usda-date {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+}
+
+@media (max-width: 1024px) {
+  .market-signals {
+    padding: var(--spacing-lg);
+  }
+
+  .signals-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .signals-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+}
+

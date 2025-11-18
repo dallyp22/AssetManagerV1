@@ -1,0 +1,12 @@
+Loading Boyd Jones portfolio data...
+Loaded 30 assets
+
+✓ Asset Manager Backend running on http://localhost:3001
+✓ API endpoints:
+  - GET  /api/portfolio/metrics
+  - GET  /api/assets
+  - GET  /api/assets/:id
+  - GET  /api/market/commodities
+  - GET  /api/market/signals
+  - POST /api/scenarios
+  - GET  /api/scenarios/:id/comparison

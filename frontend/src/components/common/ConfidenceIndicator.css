@@ -1,0 +1,38 @@
+.confidence-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.confidence-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+  animation: pulse 2s infinite;
+}
+
+.confidence-label {
+  font-size: var(--font-size-xs);
+  color: var(--gray-400);
+  font-weight: var(--font-weight-medium);
+}
+
+.confidence-small .confidence-dot {
+  width: 6px;
+  height: 6px;
+}
+
+.confidence-small .confidence-label {
+  font-size: 10px;
+}
+
+.confidence-large .confidence-dot {
+  width: 10px;
+  height: 10px;
+}
+
+.confidence-large .confidence-label {
+  font-size: var(--font-size-sm);
+}
+

@@ -1,0 +1,133 @@
+.watchlist-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.watchlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.watchlist-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-300);
+  margin: 0;
+}
+
+.watchlist-empty {
+  padding: var(--spacing-xl);
+  text-align: center;
+  color: var(--gray-500);
+}
+
+.watchlist-empty p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.empty-hint {
+  font-size: var(--font-size-xs);
+  margin-top: var(--spacing-xs);
+  opacity: 0.7;
+}
+
+.watchlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.watchlist-item {
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.watchlist-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--gray-600);
+  transform: translateX(4px);
+}
+
+.watchlist-item.selected {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--success-green);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.watchlist-item-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.item-title-section {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  flex: 1;
+  min-width: 0;
+}
+
+.item-star {
+  font-size: var(--font-size-base);
+  flex-shrink: 0;
+}
+
+.item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-200);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-category {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+}
+
+.watchlist-metrics {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.metric-small {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metric-small-label {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+}
+
+.metric-small-value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-200);
+}
+
+.metric-small-value.positive {
+  color: var(--success-green);
+}
+
+.metric-small-value.negative {
+  color: var(--danger-red);
+}
+

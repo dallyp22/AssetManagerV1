@@ -1,0 +1,89 @@
+.metric-card {
+  padding: var(--spacing-lg);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.metric-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.metric-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.metric-icon {
+  font-size: var(--font-size-xl);
+}
+
+.metric-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin: 0;
+}
+
+.metric-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.metric-value-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.metric-value {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-50);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.metric-change {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.metric-change.positive {
+  color: var(--success-green);
+}
+
+.metric-change.negative {
+  color: var(--danger-red);
+}
+
+.metric-change.neutral {
+  color: var(--gray-400);
+}
+
+.metric-chart {
+  margin-top: auto;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .metric-value {
+    font-size: var(--font-size-2xl);
+  }
+
+  .metric-card {
+    min-height: 120px;
+    padding: var(--spacing-md);
+  }
+}
+

@@ -1,0 +1,135 @@
+.asset-focus-view {
+  padding: var(--spacing-xl);
+  min-height: 500px;
+}
+
+.focus-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+.focus-title-section {
+  flex: 1;
+}
+
+.focus-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-50);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.focus-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.meta-text {
+  font-size: var(--font-size-sm);
+  color: var(--gray-400);
+}
+
+.focus-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.focus-metric-card {
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.focus-metric-label {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.focus-metric-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-50);
+}
+
+.focus-metric-value.positive {
+  color: var(--success-green);
+}
+
+.focus-metric-value.negative {
+  color: var(--danger-red);
+}
+
+.metric-percent {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.metric-percent.positive {
+  color: var(--success-green);
+}
+
+.metric-percent.negative {
+  color: var(--danger-red);
+}
+
+.readiness-display {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+}
+
+.focus-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.focus-chart-card {
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+.chart-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-300);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.focus-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.focus-actions button {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .focus-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .focus-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
