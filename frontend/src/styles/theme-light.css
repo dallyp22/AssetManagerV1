@@ -1,0 +1,175 @@
+/* Light Mode Theme Variables */
+
+[data-theme="light"] {
+  /* Background Colors */
+  --charcoal: #F5F7FA;
+  --deep-green: #E8F5F0;
+  
+  /* Text Colors */
+  --gray-50: #111827;
+  --gray-100: #1F2937;
+  --gray-200: #374151;
+  --gray-300: #4B5563;
+  --gray-400: #6B7280;
+  --gray-500: #9CA3AF;
+  --gray-600: #D1D5DB;
+  --gray-700: #E5E7EB;
+  --gray-800: #F3F4F6;
+  --gray-900: #F9FAFB;
+  
+  /* Status Colors - keep vibrant */
+  --success-green: #059669;
+  --warning-amber: #D97706;
+  --danger-red: #DC2626;
+  --info-blue: #2563EB;
+  
+  /* Glassmorphic Effects - inverted */
+  --glass-background: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-hover: rgba(255, 255, 255, 0.85);
+  
+  /* Shadows for light mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] body {
+  background: linear-gradient(135deg, #F5F7FA 0%, #E8F0EE 100%);
+  color: var(--gray-100);
+}
+
+[data-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 4px 16px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .glass-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Navigation in light mode */
+[data-theme="light"] .navigation {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs in light mode */
+[data-theme="light"] .search-input,
+[data-theme="light"] .filter-select,
+[data-theme="light"] .input-field,
+[data-theme="light"] .form-input,
+[data-theme="light"] .editor-input {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: var(--gray-100);
+}
+
+[data-theme="light"] .search-input::placeholder,
+[data-theme="light"] .filter-input::placeholder {
+  color: var(--gray-500);
+}
+
+[data-theme="light"] .search-input:focus,
+[data-theme="light"] .filter-select:focus,
+[data-theme="light"] .input-field:focus,
+[data-theme="light"] .form-input:focus,
+[data-theme="light"] .editor-input:focus {
+  background: rgba(255, 255, 255, 1);
+  border-color: var(--success-green);
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+/* Buttons in light mode */
+[data-theme="light"] .button-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--gray-100);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .button-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 1);
+  border-color: var(--gray-400);
+}
+
+[data-theme="light"] .button-ghost {
+  color: var(--gray-400);
+}
+
+[data-theme="light"] .button-ghost:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--gray-200);
+}
+
+/* Improved contrast for light mode text */
+[data-theme="light"] .metric-value-large,
+[data-theme="light"] .metric-value,
+[data-theme="light"] .page-title,
+[data-theme="light"] .dashboard-title,
+[data-theme="light"] .panel-title {
+  color: var(--gray-50);
+  text-shadow: none;
+}
+
+[data-theme="light"] .metric-label,
+[data-theme="light"] .valuation-label {
+  color: var(--gray-400);
+}
+
+/* FMV card in light mode */
+[data-theme="light"] .fmv-metric {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.12), rgba(5, 150, 105, 0.05));
+  border-color: rgba(5, 150, 105, 0.3);
+  box-shadow: 
+    0 0 20px rgba(5, 150, 105, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Badges in light mode */
+[data-theme="light"] .badge-default {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--gray-300);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Skeleton loaders in light mode */
+[data-theme="light"] .skeleton {
+  background: linear-gradient(
+    90deg,
+    #E5E7EB 0%,
+    #F3F4F6 50%,
+    #E5E7EB 100%
+  );
+}
+
+/* Tables in light mode */
+[data-theme="light"] .data-table thead {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .data-table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Improved readability for metric cards */
+[data-theme="light"] .metric-item {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .valuation-item.primary {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.15), rgba(5, 150, 105, 0.08));
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+

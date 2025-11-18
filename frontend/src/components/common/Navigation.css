@@ -75,6 +75,32 @@
   background: var(--success-green);
 }
 
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  margin-left: var(--spacing-md);
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--glass-hover);
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--success-green);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95) rotate(-15deg);
+}
+
 @media (max-width: 768px) {
   .navigation {
     height: 56px;

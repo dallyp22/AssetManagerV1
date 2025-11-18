@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../../context/ThemeContext';
 import './Navigation.css';
 
 function Navigation() {
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   const isActive = (path) => {
     if (path === '/' && location.pathname === '/') return true;
@@ -38,6 +40,14 @@ function Navigation() {
           >
             Scenarios
           </Link>
+
+          <button 
+            className="theme-toggle"
+            onClick={toggleTheme}
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
         </div>
       </div>
     </nav>
